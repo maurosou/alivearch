@@ -1,0 +1,38 @@
+<ion-content >
+  <!--(ionSlideReachEnd)="navHome()"-->
+    <ion-slides pager="true" (ionSlideDidChange)="slideChanged()" >
+      <ion-slide style="width: 100% ; height: 100% !important;">
+        <h3>BEM VINDO</h3>
+        <h3>AO ALIVE ARCH</h3>
+        <h5>Você está pronto para descobrir lugares incríveis perto de você ou contar para outros apaixonados por arquitetura sobre uma construção que talvez só você conheça? </h5>
+        <img class="imgsize" src="assets/imgs/tutorial/Tutorial 1.png">
+      </ion-slide>
+      <ion-slide style="width: 100% ; height: 100% !important;">
+        <h3 class="botton-space">PODEM SER</h3>
+        <img src="assets/imgs/tutorial/Tutorial 2_ícones.png">
+        <ion-grid class="no-top-padding">
+        <ion-row>
+            <ion-col class="no-top-padding">
+              <h5 class="no-top-margin buildings">prédios</h5>
+            </ion-col>
+            <ion-col class="no-top-padding">
+              <h5 class="no-top-margin monuments">monumentos</h5> 
+            </ion-col>
+            <ion-col  class="no-top-padding">
+              <h5 class="no-top-margin squares">praças</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <img src="assets/imgs/tutorial/Tutorial 2.png">
+      </ion-slide>
+      <ion-slide style="width: 100% ; height: 100% !important;" ionSlideDrag="navHome()">
+        <h3>VAMOS</h3>
+        <h3>NESSAS</h3>
+        <h5>Busque por uma construção ou pelo seu arquiteto favorito, descubra como chegar lá e compartilhe tudo com seus amigos! </h5>
+        <img class="imgsize" src="assets/imgs/tutorial/Tutorial 3.png" (click)="navHome()">
+      </ion-slide>
+
+      
+    </ion-slides>
+    
+  </ion-content>

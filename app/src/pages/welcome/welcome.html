@@ -1,0 +1,58 @@
+<ion-content padding id="welcome" >
+  <ion-grid>
+  <ion-row>
+    <ion-col text-center >
+      <img src="assets/imgs/logoAlive.png" class="logo"/>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-list inset>
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="usuario.email" placeholder="E-mail"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" [(ngModel)]="usuario.senha" placeholder="Senha"></ion-input>
+  </ion-item>
+
+  <div class="carregando" [style.display]="carregando?'block':'none'">
+    <ion-spinner name="ios" duration="700"></ion-spinner>
+  </div>
+
+  <button ion-button block color="primary" type="submit" (click)="Entrar()" [style.display]="!carregando?'block':'none'" >Entrar</button>
+
+</ion-list>
+<div padding-horizontal>
+  <div class="login-footer">
+    <p>
+      <a (click)="Esqueci()">Esqueceu a senha?</a>
+      Novo aqui, cadastre-se.
+    </p>
+  </div>
+
+</div>
+<ion-grid>    
+  <ion-row>
+    <ion-col center text-center>
+      <button ion-button block  class="btn-tools"(click)="loginFacebookApp()">
+          <ion-icon name="logo-facebook"></ion-icon>
+          {{"facebook" | translate }}</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col center text-center>
+      <button ion-button block class="btn-tools" (click)="loginGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+          {{"google" | translate }}</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col>
+        <button ion-button block class="btn-tools" (click)="novaConta()" >
+            <ion-icon name="md-mail" large></ion-icon>
+            Cadastrar com e-mail</button>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>

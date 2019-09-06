@@ -1,0 +1,102 @@
+page-welcome {
+    #welcome{
+        background: linear-gradient(to top right, #13d5bc,#45e591);
+        h1{
+            font-size: 52px;
+            margin-top:50px
+        }
+        .marginTop{
+            margin-top:150px;
+        }
+        .logo{
+            height: 100px;
+        }
+        .button-outline-md {
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            background-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            padding: 0;            
+          }
+          .button-inner{
+            justify-content:flex-start;
+        }
+        .icon{
+            padding-right: 10px;
+        }
+    }
+    ion-input { 
+        text-align: left ; 
+        color: white;
+    }
+
+    input::-moz-placeholder {
+        color: rgba(255,255,255,0.9)!important;
+    }
+      
+    input:-ms-input-placeholder {
+        color: rgba(255,255,255,0.9)!important;
+    }
+    
+    input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: rgba(255,255,255,0.9)!important;
+    }
+
+    
+    ion-item {
+        background: rgba(255,255,255,0.1)!important;
+        margin-bottom:10px!important;
+    }
+    .button-outline-ios{
+        border-color: white;
+        color: white;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #b8ccc2 !important;
+        opacity: 1; /* Firefox */
+        font-size: 90%;
+    }
+
+.scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .scroll {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .transparent-input {
+    background: transparent !important;
+    border: none;
+}
+
+.carregando {
+    text-align: center;
+    margin-top:10px;
+  }
+  
+  .carregando ion-spinner {
+    width: 40px;
+    height: 40px;
+    * {
+        stroke: #fff;
+    }
+  
+    &.spinner-circles circle,
+    &.spinner-bubbles circle,
+    &.spinner-dots circle {
+        fill: #fff;
+    }
+  }
+
+  .btn-tools {
+      background: transparent!important;
+  }
+}

@@ -1,0 +1,24 @@
+<ion-content>
+    <div style="height:100%; width:100%;">
+  <div #map id="map"></div>
+    </div>
+  
+    <div class="popup" [style.display]="popup?'block':'none'">
+
+      <div class="container-popup">
+        <div class="fechar-popup" (click)="FecharPopup()">
+          X
+        </div>
+
+        <img src="https://drengenharia.com/wp-content/uploads/2017/07/residencial_athos.jpg" height="150">
+
+        <p class="data">30/08/2019</p>
+        <p class="titulo">{{registro.nome_edificio}}</p>
+        <p class="descricao">{{registro.descricao}}</p>
+
+        <button class="link" (click)="AbrirLink()">Link Externo</button>
+      </div>
+
+    </div>
+
+</ion-content>

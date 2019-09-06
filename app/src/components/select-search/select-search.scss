@@ -1,0 +1,99 @@
+.item-select-search {
+    .label {
+        margin-right: 0;
+    }
+}
+ 
+.select-search {
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #45e591 !important;
+        opacity: 1; /* Firefox */
+        font-size: 90%;
+    }
+    display: flex;
+ 
+    &-label {
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+ 
+    &-value {
+        max-width: 45%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+ 
+    &-icon {
+        position: relative;
+        width: 20px;
+        //color: whitesmoke;
+    }
+ 
+    &-icon-inner {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        border-top: 5px solid;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        pointer-events: none;
+        //color: whitesmoke;
+    }
+ 
+    &-ios {
+        .select-search-icon {
+            height: 18px;
+        }
+ 
+        .select-search-icon-inner {
+            margin-top: -2px;
+            color: whitesmoke;
+        }
+ 
+        .select-search-value {
+            padding-left: 0px;
+        }
+    }
+ 
+    &-md {
+        .select-search-icon {
+            height: 19px;
+        }
+ 
+        .select-search-icon-inner {
+            margin-top: -3px;
+            color: whitesmoke;
+        }
+ 
+        .select-search-value {
+            padding-left: 0px;
+        }
+ 
+        .select-search-label {
+            color: white;
+        }
+    }
+ 
+    &-spinner {
+        &-background {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background-color: #000;
+            z-index: 100;
+            opacity: 0.05;
+        }
+ 
+        ion-spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+}

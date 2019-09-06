@@ -1,0 +1,103 @@
+page-esqueci {
+    #welcome{
+        background: linear-gradient(to top right, #13d5bc,#45e591);
+        h1{
+            font-size: 52px;
+            margin-top:50px
+        }
+        .marginTop{
+            margin-top:150px;
+        }
+        .logo{
+            height: 100px;
+        }
+        
+          .button-inner{
+            justify-content:flex-start;
+        }
+        .icon{
+            padding-right: 10px;
+        }
+    }
+    ion-input { 
+        text-align: left ; 
+        color: white;
+    }
+
+    input::-moz-placeholder {
+        color: rgba(255,255,255,0.9)!important;
+    }
+      
+    input:-ms-input-placeholder {
+        color: rgba(255,255,255,0.9)!important;
+    }
+    
+    input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: rgba(255,255,255,0.9)!important;
+    }
+
+    .button-outline-ios{
+        border-color: white;
+        color: white;
+    }
+
+    .scroll-content {
+        display: table !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .scroll {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .transparent-input {
+        background: transparent !important;
+        border: none;
+    }
+
+    .btn-voltar {
+        display:block;
+        width: 100%;
+        text-align: center;
+        background: transparent;
+        border:none;
+        font-size:16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-top:1px solid rgba(255,255,255,0.5)!important;
+        padding-top: 1rem;
+        color:white;
+        margin-top:5rem;
+    }
+
+    button {
+        width: 100%;
+        text-align:center;
+    }
+
+    ion-item {
+        background: transparent!important;
+        margin-bottom:10px!important;
+    }
+
+    .carregando {
+        text-align: center;
+      }
+      
+      .carregando ion-spinner {
+        width: 40px;
+        height: 40px;
+        * {
+            stroke: #fff;
+        }
+      
+        &.spinner-circles circle,
+        &.spinner-bubbles circle,
+        &.spinner-dots circle {
+            fill: #fff;
+        }
+      }
+}

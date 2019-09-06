@@ -1,0 +1,78 @@
+page-map {
+    #map{
+        height: 100%;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1; /* Firefox */
+    }
+    .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup {
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        z-index: 999;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .container-popup {
+        background: white;
+        position: absolute;
+        top:5%;
+        left:5vw;
+        width: 90vw;
+        max-height: 90%;
+        overflow: auto;
+        padding: 1rem 2rem 3rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+        -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.17);
+        -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.17);
+        box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.17);
+    }
+
+    .fechar-popup {
+        position: fixed;
+        top:4%;
+        right:4vw;
+        background: brown;
+        color:white;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+
+    .titulo {
+        font-size:20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .descricao {
+        margin:50px 0;
+        font-size:16px;
+        color:rgba(0, 0, 0, 0.7); 
+    }
+
+    .link {
+        text-align: center;
+        background: white;
+        text-transform: uppercase;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        padding: 10px 15px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+
+}

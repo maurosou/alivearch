@@ -1,0 +1,122 @@
+page-form {
+    #form{
+        background: linear-gradient(to top right, #13d5bc,#45e591);
+    }
+    ion-list{
+       // margin-bottom: 15px !important;
+       margin-bottom: 0px !important;
+    }
+    ion-item{
+        background-color: transparent;
+        border: 0px !important;
+        //margin-bottom: 10px !important;
+        padding: 0px !important;
+        color: #45e591 !important;
+    }
+    ion-input{
+        background-color: white;
+        color: #45e591;
+    }
+    ion-select{
+        background-color: white;
+        color: #45e591;
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: 11px;
+    }
+    ion-textarea{
+        background-color: white;
+        color: #45e591;
+    }
+    ion-icon {
+        font-size: 40px; //Preferred size here
+        color: white;
+    }
+    ion-row{
+        margin-bottom: 15px !important;
+    }
+    ion-col{
+        padding: 0px;
+    }
+    ion-label{
+        margin-left: 8px !important;
+    }
+    form{
+        margin-top: 20px !important;
+    }
+    input{
+        margin-left: 8px !important;
+        text-align: left;
+    }
+
+    .left-item{
+        padding-left: 0px !important;
+        padding-right: 10px !important;
+    }
+
+    .right-item{
+        padding-right: 0px !important;
+        padding-left: 10px !important;
+    }
+
+    .button-md{
+        -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+    }
+
+    textarea{
+        height: 75px;
+        margin-left: 8px !important;
+    }
+
+    h1{
+        color: white;
+    }
+    h3{
+        color: white;        
+        font-family: LatoBold;
+        //font-size: 1.8rem;
+    }
+    h5{
+        color: white;
+        font-family: LatoMedium;
+    }
+    button{
+        color: white;       
+        border-color: white !important;
+    }
+    span{
+        //color: #45e591;     
+    }
+    .item-md{
+
+    }
+    .item-inner{
+        padding: 0px !important;
+        border: 0px !important;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #45e591 !important;
+        opacity: 1; /* Firefox */
+        font-size: 90%;
+    }
+    .select-search-label {
+        color: #45e591 !important;
+        font-size: 14px;
+    }
+
+    .button[icon-only]{
+        background-color: transparent;
+    }
+    [icon-only] ion-icon {
+        font-size: 40px !important;
+    }
+    .button-send{
+        border: 2px solid white;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+
+}
+

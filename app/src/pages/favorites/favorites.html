@@ -1,0 +1,32 @@
+
+
+<ion-content padding overflow-scroll="true">
+  <h3>{{"favorites" | translate}}</h3>
+  <h5>{{"favorites-sub" | translate}}</h5>
+  <h5 *ngIf="!hasFavorite">Adicione já seus favoritos</h5>
+<ion-list *ngIf="hasFavorite">
+  <ion-item *ngFor="let building of buildings">
+    <ion-card class="container categoria{{building.categoria}}" class="">
+      <img src="http://alivearchapp.com/viagemdearquiteto/painel/upload/edificio/{{building.foto}}" (click)='openFavorite(building.codigo)'  />
+      <button  ion-fab class="topright heart" icon-only (click)="unfavoriteBuilding(building.codigo)">
+        <i class="fas fa-heart heart-size"></i></button>
+        <ion-item (click)='openFavorite(building.codigo)'>
+            <h2>{{building.nome}}</h2>
+          </ion-item>
+<!-- <div class="card-title">{{building.nome}}</div> -->
+</ion-card>
+</ion-item>
+<!--
+<ion-item>
+<ion-card class="container">
+  <img src="assets/imgs/testes/casadocomercio.jpg" height="275px">  
+    <button ion-fab class="topright heart">
+      <ion-icon name="heart" class="heart-size"></ion-icon>
+    </button>
+  <ion-item>
+    <h2>Casa do comércio</h2>
+  </ion-item>
+</ion-card>
+</ion-item>-->
+</ion-list>  
+</ion-content>

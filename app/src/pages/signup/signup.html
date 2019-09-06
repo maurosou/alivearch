@@ -1,0 +1,25 @@
+<ion-content padding class="appBackground">
+  <ion-card>
+    <ion-card-header>
+      Registration
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+        </ion-item>
+
+        <button ion-button full color="success" (click)="register()">Sign up</button>
+        <button ion-button full color="success" (click)="login()">Login Page</button>
+        <button ion-button full color="success" (click)="welcome()">Welcome Page</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

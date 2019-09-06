@@ -1,0 +1,158 @@
+page-search {
+    ion-content{
+        background: linear-gradient(to top right, rgba(239,96,96,0.9) ,rgba(252, 122, 81,0.9)) !important;       
+    }
+    .scroll-content{
+        padding-top: 48px !important;
+    }
+    .input-place{
+        font-size: 16px;
+        background: linear-gradient(to top right, #ef6060,#fc7a51) ;
+        color: white; 
+        font-family: Roboto, Arial, sans-serif; 
+        font-size: 16px; 
+        line-height: 38px; 
+        background: linear-gradient(to right top, rgb(239, 96, 96), rgb(252, 122, 81)); 
+        padding-left: 5px; 
+        padding-right: 5px; 
+        width: 90%; 
+        border-width: 0px 0px 1px;
+        border-style: initial; 
+        border-color: white; 
+        border-image: initial;
+        margin-bottom: 22px; 
+        margin-top: 22px; 
+        z-index: 0; 
+        position: absolute; 
+        top: 0px; 
+        left: 19px;
+
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: whitesmoke;
+      opacity: 1; /* Firefox */
+  }
+    .item-md{
+      background-color: transparent;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 12px;
+      padding: 0 11px 0 13px;
+      text-overflow: ellipsis;
+      width: 90%;
+    }
+    .item-ios{
+      background-color: transparent;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 12px;
+      padding: 0 0 0 13px;
+      text-overflow: ellipsis;
+      width: 90%;
+    }
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+      .controls {
+        margin-top: 10px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid white;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        color: whitesmoke;
+        //box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+      .search-button{
+        margin-top: 10px;
+        background-color: transparent;
+        color: whitesmoke;
+        border: 1px solid white;
+        //border-radius: 2px 0 0 2px;
+      }
+
+      #place {
+        background-color: transparent;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 90%;
+      }
+
+      #fromYear {
+        background-color: transparent;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 90%;
+      }
+      #toYear {
+        background-color: transparent;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 90%;
+      }
+
+      #architect {
+        background-color: transparent;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+        text-overflow: ellipsis;
+        width: 90%;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
+    .input-arch{
+        font-size: 16px;
+        background: linear-gradient(to top right, #ef6060,#fc7a51) ;
+
+    }
+
+}

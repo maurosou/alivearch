@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">{{"close" | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content  class="categoria{{buildingDetails.categoria}}" padding> <!--class="teste{{buildingDetails.categoria}}"-->
+    <ion-card (swipe)="swipeEvent($event)" > <!--class="borda{{buildingDetails.categoria}}"-->
+        <img src="http://alivearchapp.com/viagemdearquiteto/painel/upload/edificio/{{buildingDetails.foto}}" height="55%">
+        <ion-fab right top>
+            <ion-buttons end>
+                <button  ion-fab class="topright heart" icon-only (click)="unfavoriteBuilding()" *ngIf="isFavorite"><i class="fas fa-heart heart-size"></i></button>
+                <button  ion-fab class="topright heart" icon-only (click)="favoriteBuilding()" *ngIf="!isFavorite"><i class="far fa-heart heart-size"></i></button>
+            </ion-buttons>
+          <!--<button ion-fab class="topright heart">
+            <i class="far fa-heart heart-size"></i>
+          </button> -->
+        </ion-fab>
+        <ion-card-content>        
+          <h2><b>{{buildingDetails.nome}}</b></h2>           
+          <h4 style="padding-top: 15px;"><b>Data de construção:</b> {{buildingDetails.data_construcao}}</h4>
+          <h4 style="padding-bottom: 15px;"><b>Arquiteto:</b> {{buildingDetails.arquiteto_nome}}</h4>       
+          <span>{{buildingDetails.descricao}}</span>
+       </ion-card-content>
+       <!--
+       <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="share()">
+            <ion-icon name="share-alt"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button icon-left clear small (click)="createRoute()">
+            <ion-icon name="navigate"></ion-icon>
+            <div>Route</div>
+          </button>
+        </ion-col>
+      </ion-row>
+      -->
+      <ion-row class="cardfooter">
+        <ion-col>
+          <button ion-button icon-left clear small (click)="share()" class="button-color{{buildingDetails.categoria}}">
+            <i class="fas fa-share-alt"></i>
+            <!--<ion-icon name="share-alt"></ion-icon>-->
+            <div style="padding-left: 10px;"> Share</div>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button icon-left clear small (click)="createRoute()" class="button-color{{buildingDetails.categoria}}">
+            <i class="fas fa-share"></i>
+            <!--<ion-icon name="navigate"></ion-icon>-->
+            <div style="padding-left: 10px;">Route</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    
+      </ion-card>
+</ion-content>

@@ -1,0 +1,38 @@
+
+<ion-content padding id="welcome" >
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center >
+        <img src="assets/imgs/logoAlive.png" class="logo"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list inset>
+
+    <ion-item>
+      <ion-input type="text"  placeholder="Email" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Senha" [(ngModel)]="usuario.senha"></ion-input>
+    </ion-item>
+
+    <div class="carregando" [style.display]="carregando?'block':'none'">
+      <ion-spinner name="ios" duration="700"></ion-spinner>
+    </div>
+    <button ion-button (click)="Salvar()" [style.display]="!carregando?'block':'none'">Salvar</button>
+
+  </ion-list>
+
+  <ion-grid>    
+    <ion-row>
+        <ion-col>
+          <button (click)="Voltar()" class="btn-voltar">
+              <ion-icon name="ios-arrow-back"></ion-icon>
+            Voltar
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

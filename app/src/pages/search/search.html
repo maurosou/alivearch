@@ -1,0 +1,77 @@
+
+<ion-content padding>    
+  <form id="form" (ngSubmit)="search()">
+    <input id="place" class="controls" name="place" type="text" placeholder="{{'choose' | translate }}">
+    <ion-item class="controls">
+      <select-search
+          [(ngModel)]="data.architect"
+          name="architect"
+          id="architect"
+          title="{{'architects' | translate }}"
+          itemValueField="id"
+          itemTextField="name"
+          [items]="architects"
+          [canSearch]="true"
+          [multiple]="true"
+          (onChange)="architectChange($event)">
+      </select-search>
+    </ion-item>
+    <ion-item class="controls">
+      <select-search
+          [(ngModel)]="data.category"
+          name="category"
+          id="category"
+          title="{{'categories' | translate }}"
+          itemValueField="id"
+          itemTextField="{{'name' | translate }}"
+          [items]="categories"
+          [canSearch]="true"
+          [multiple]="true"
+          (onChange)="categoryChange($event)">
+      </select-search>
+    </ion-item>
+    <ion-item class="controls">
+      <select-search
+          [(ngModel)]="data.category"
+          name="materials"
+          id="materials"
+          title="{{'materials' | translate }}"
+          itemValueField="id"
+          itemTextField="{{'name' | translate }}"
+          [items]="categories"
+          [canSearch]="true"
+          [multiple]="true"
+          (onChange)="materialsChange($event)">
+      </select-search>
+    </ion-item>
+    <ion-item class="controls">
+      <select-search
+          [(ngModel)]="data.category"
+          name="materials"
+          id="materials"
+          title="{{'category' | translate }}"
+          itemValueField="id"
+          itemTextField="{{'name' | translate }}"
+          [items]="categories"
+          [canSearch]="true"
+          [multiple]="true"
+          (onChange)="materialsChange($event)">
+      </select-search>
+    </ion-item>
+    
+    <!--<ion-label>Period</ion-label>-->
+
+    <input id="fromYear" class="controls" [(ngModel)]="data.fromYear" name="fromYear" type="number" placeholder="{{'from' | translate }}" maxlength="4">
+
+    <input id="toYear" class="controls" [(ngModel)]="data.toYear" name="toYear" type="number" placeholder="{{'to' | translate }}" maxlength="4">
+
+  
+    <!--
+    <ion-input id="architect" class="controls" name="architect" type="text" placeholder="Choose Architect"></ion-input>
+    -->
+    
+    <button ion-button type="submit" class="search-button"block>{{'search' | translate }}</button>
+    <button ion-button (click)="selectAll()" class="search-button"block>{{'clear filters' | translate }}</button>
+    <button ion-button type="submit" class="search-button"block>{{'cancel' | translate }}</button>
+  </form>
+</ion-content>

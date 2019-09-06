@@ -1,0 +1,58 @@
+page-tutorial {
+
+    .swiper-pagination-bullet-active{
+        background: white !important; 
+    }
+    ion-slide{
+        background: linear-gradient(to top right, #ef6060,#fc7a51);
+    }
+    ion-col{
+        color: white;
+        font-family: LatoMedium;
+    }
+    h3{
+        margin: 0px !important;
+        color: white;
+        font-family: LatoBold;
+    }
+    h5{
+        font-size: 14px !important;
+        padding-right: 22px;
+        padding-left: 22px;
+        color: white;
+        font-family: LatoMedium;
+    }
+    .botton-space{
+        padding-bottom: 30px;
+    }
+    .no-top-padding{
+        padding-top: 0px;
+    }
+    .no-top-margin{
+        margin-top: 0px;
+    }
+    .buildings{
+        padding-right: 20px;
+        text-align:right!important;
+        display: block;
+    }
+    .monuments{
+        padding:0px;
+        text-align:center;
+        display: block;
+    }
+    .squares{
+        padding-left: 20px;
+        text-align:left;
+        display: block;
+    }
+    .imgsize{
+        height: 333px;
+    }
+
+    @media only screen and (max-width: 300px) {
+        .buildings,.monuments,.squares{
+            padding: 0;
+        }
+      }
+}

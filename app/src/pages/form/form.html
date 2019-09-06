@@ -1,0 +1,93 @@
+<ion-content padding id="form">
+  <form>
+      
+      <ion-list>
+        
+          <h3 style="margin: 0px;">{{"sugest" | translate }}</h3>
+          <h5 style="margin: 0px;">*{{"required info" | translate }}</h5>
+        
+        </ion-list>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="left-item">
+            <ion-input type="button" (click)="openMapModal()"  readonly="true" name="place" value="{{'place' | translate }}"></ion-input>
+          </ion-col>
+          <ion-col  class="right-item">
+            <ion-input type="button" (click)="takePhoto()"  readonly="true" name="photo"  value="{{'photo' | translate }}" ></ion-input>
+            <!-- <button ion-button block outline (click)="takePhoto()" >
+              <ion-icon name="camera"></ion-icon>Take Photo
+              </button> -->
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-input type="text" name="buildingName" [(ngModel)]="data.buildingName" placeholder="{{'building name' | translate }}"></ion-input>
+        </ion-row>
+        <ion-row>
+          <!-- <ion-input type="text" name="archName" placeholder="{{'arch name' | translate }}"></ion-input> -->
+          <ion-item class="controls">
+            <select-search
+                [(ngModel)]="data.architects"
+                name="architect"
+                id="architect"
+                title="ARCHITECTS"
+                itemValueField="id"
+                itemTextField="name"
+                [items]="architects"
+                [canSearch]="true"
+                [multiple]="true"
+                (onChange)="architectChange($event)">
+            </select-search>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-col class="left-item" col-7>
+            <ion-input type="text" [(ngModel)]="data.constructionYear" name="constructionYear" placeholder="{{'construction year' | translate }}"></ion-input>
+          </ion-col>
+          <ion-col class="right-item" col-5>
+           <!-- <ion-input type="text" name="type" placeholder="TIPO"></ion-input> -->
+              <ion-select type="text" [(ngModel)]="data.type" name="type" [selectOptions]="typeOptions" placeholder='{{"type" | translate }}'> <!-- [(ngModel)]="gender" -->
+                
+                <ion-option value="buildings">{{"buildings" | translate }}</ion-option>
+                <ion-option value="monument">{{"monument" | translate }}</ion-option>
+                <ion-option value="square">{{"square" | translate }}</ion-option>
+              </ion-select>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-textarea type="text" [(ngModel)]="data.description" name="description" placeholder="{{'building-description' | translate }}"></ion-textarea>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3></ion-col>
+          <ion-col col-6>
+            <button ion-button icon-only class="button-send" (click)="send()">
+              <div class="space-buton">
+                {{"send" | translate}}
+              </div>
+            </button>
+            </ion-col>
+            <ion-col  col-3>
+              <button ion-button icon-only (click)="openInformationModal()">
+                <ion-icon ios="ios-information-circle-outline" md="md-information-circle"></ion-icon>
+              </button>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+ 
+<!--    
+  <button ion-button outline>Enviar</button>
+  <ion-icon name="information-circle-outline"></ion-icon> -->
+</form>
+</ion-content>
+<!--
+<form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>Todo</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" block>Add Todo</button>
+  </form>
+-->

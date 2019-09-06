@@ -1,0 +1,16 @@
+page-news-detail {
+  main {
+    background: #fff;
+    position: relative;
+    border: 1px solid #fff;
+    font-family: 'IM Fell French Canon Pro';
+    font-size: 1.4rem;
+    padding: 2rem 25%;
+    line-height: 1.6;
+  }
+  @media all and (max-width: 400px) {
+    main {
+      padding: 2rem;
+    }
+  }
+}

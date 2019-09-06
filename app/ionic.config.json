@@ -1,0 +1,9 @@
+{
+  "name": "AliveArchApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "9081e148",
+  "id": "9081e148"
+}

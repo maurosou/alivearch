@@ -1,0 +1,70 @@
+page-building {
+    ion-content{
+        //background-color: rgba(239,96,96,0.9) !important;
+        background: linear-gradient(to top right, rgba(239,96,96,0.9) ,rgba(252, 122, 81,0.9)) !important;
+    }
+    .categoria0{
+        background: linear-gradient(to top right, rgba(239,96,96,0.9) ,rgba(252, 122, 81,0.9)) !important;
+    }
+    .categoria3{
+        background: linear-gradient(to top right, #13d5bc ,#45e591) !important;
+    }
+    .categoria1{
+        background: linear-gradient(to top right, #442c68 ,#ad4ba1) !important;
+    }
+    .categoria2{
+        background: linear-gradient(to top right, rgba(239,96,96,0.9) ,rgba(252, 122, 81,0.9)) !important;
+    }
+    
+    //ion-card {
+        //border: 3px solid #ef6060;
+        //height: 95%;
+    //}
+    ion-item{
+        border: 0px !important;
+    }
+    .heart{
+        color: #F77255 !important;
+        background-color: white !important;
+        border-radius : 0% !important;
+    }
+    .heart-size{
+        font-size: 30px;
+    }
+    h5{
+        margin: 0px !important;
+    }
+    h3{
+        padding-top: 10px;
+        margin: 0px;
+    }
+    .topright {
+        position: absolute;
+        top: 18px;
+        right: 16px;
+        font-size: 18px;
+    }
+    .container{
+        position: relative;
+    }
+    .button-color0{
+        color: #ef6060;
+        font-size: 17px;
+        background: white;
+    }
+    .button-color3{
+        color: #13d5bc;
+        font-size: 17px;
+        background: white;
+    }
+    .button-color1{
+        color: #442c68;
+        font-size: 17px;
+        background: white;
+    }
+    .button-color2{
+        color: #ef6060;
+        font-size: 17px;
+        background: white;
+    }
+}
